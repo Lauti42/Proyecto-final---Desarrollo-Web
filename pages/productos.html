@@ -4,59 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Games</title>
+    <title>La Mona Jacinta</title>
 </head>
-<body>
-    <header class="superior">
-        <section class="superior_botonesDerechos">
-            <ul>
-                
-                <ul>
-                    
-                    <li>
-                        <a href="./pages/page-1.html">Equipos</a>
-                    </li>
-                    
-                    <li>
-                        <a href="./pages/page-2.html">Jugadores</a>
-                    </li>
+<body id="grilla">
 
-                    <li>
-                        <a href="./pages/page-3.html">Posiciones</a>
-                    </li>
+    <header>
+        <nav>
+            <div id="botoneraUno">
+                <a href="../index.html">Inicio</a>
+                <a href="../pages/productos.html">Productos</a>
+            </div>
+            <div class="animate__animated animate__bounceInDown" id="logo"><img src="../assets/images/logo.jpeg" alt="Logo Jacinta Mona" height="100px"></div>
+            <div id="botoneraDos">
+                <a href="../pages/quienes-somos.html">Quienes somos</a>
+                <a href="../pages/galeria.html">Galeria</a>
+            </div>
+        </nav>
 
-                    <li>
-                        <a href="./pages/page-4.html">Galeria</a>
-                    </li>
-                </ul>
-            </ul>
-        </section>
-        <!-- <section class="superior_logo">
-            <img src="https://dibujafacil.com/wp-content/uploads/2022/03/Como-Dibujar-Con-El-Ordenador-Facil-Paso-a-Paso.jpg" alt=""  id="Logo" height="50" width="50">
-        </section> -->
     </header>
-    <main class="main">
-        <section class="main_contenido">
-            <section class="main_contenido_equipos">
-                
-                <img src="https://ar.global.nba.com/media/img/teams/00/logos/GSW_logo.png" alt="Imagen demostrativa de sitio web" width="300px" height="250px">
-            </section>
-            <section class="main_contenido_descripcionEqui">
-                <h1>NOTICIA 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolorem, atque commodi consequuntur aliquid quo distinctio est culpa perspiciatis libero. Neque minima alias, quas veritatis consequuntur atque ducimus dignissimos rem.</p>
-                <br>
-                
-                
-            </section>
+    <main id="main__productos">
+        <section" id="main__productos__section">
+            <img src="../assets/images/producto_1.jpeg" alt="Imagen de preducto 1">
+            <img src="../assets/images/producto_2.jpeg" alt="Imagen de preducto 2">
+            <img src="../assets/images/producto_3.jpeg" alt="Imagen de preducto 3">
+            <img src="../assets/images/producto_4.jpeg" alt="Imagen de preducto 4">
+
         </section>
-        
-        
+       
     </main>
 
     <footer>
-        FOOTER
+        <a href="../pages/contact.html">Contacto</a>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
