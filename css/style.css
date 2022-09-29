@@ -1,0 +1,146 @@
+@font-face {
+    font-family:"sunday";
+    src: url(../assets/fonts/SUNDAY.ttf);
+}
+/*
+Colores de la pagina
+.color1 { #d40b2d };
+.color2 { #dc849c };
+.color3 { #1c448b };
+.color4 { #546cac };
+.color5 { #a8b7d0 };
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#grilla {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-rows: .5fr 2fr .5fr;
+    grid-template-columns: .5fr 2fr .5fr;
+    grid-template-areas:"header header header"
+                        "main main main"
+                        "footer footer footer";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+header {
+    background-color: yellow;
+    grid-area: header;
+}
+
+header nav {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+#logo {
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+main {
+    background-image: linear-gradient(228deg, rgba(131,55,0,1) 15%, rgba(176,103,10,1) 42%, rgba(255,156,0,1) 100%);
+
+    /* background-image: radial-gradient(circle, rgba(131,55,0,1) 15%, rgba(176,103,10,1) 42%, rgba(255,156,0,1) 100%); */
+
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr .5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:"carusel"
+                        "info";
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#carrusel{
+    background-color: orange;
+    grid-area: "carrusel";
+    margin-top: 50px;
+}
+
+#carrusel img:hover{
+    height: 450px;
+    transition: 1s linear;
+}
+
+
+#carrusel img{
+    height: 400px;
+    transition: 1s linear;
+}
+
+
+#info{
+    background-color: pink;
+    grid-area: "info";
+    
+}
+
+footer {
+    background-color: blue;
+    /* grid-area: 4/1/4/4; */
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 425px) {
+    
+    
+    header nav {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"logo logo"
+                            "btn1 btn2" ;
+        justify-items: center;
+    }
+
+    #botoneraUno {
+        grid-area: btn1;
+    }
+    
+    #botoneraDos {
+        grid-area: btn2;
+    }
+
+    #logo {
+        grid-area: logo;
+        
+    }
+    a {
+        font-size: 1em;
+    }
+
+    #carrusel img{
+        height: 200px;
+    }
+}
