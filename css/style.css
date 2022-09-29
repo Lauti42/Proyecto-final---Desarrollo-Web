@@ -20,7 +20,11 @@ Colores de la pagina
 #grilla {
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-image: url(https://www.protectia.com.ar/wp-content/uploads/2018/06/bebe-durmiendo-con-osito.jpg); 
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: grid;
     grid-template-rows: .5fr 2fr .5fr;
     grid-template-columns: .5fr 2fr .5fr;
@@ -28,11 +32,11 @@ Colores de la pagina
                         "main main main"
                         "footer footer footer";
     grid-column-gap: 10px;
-    grid-row-gap: 10px;
+
 }
 
 header {
-    background-color: yellow;
+    background-color: #52e071eb;
     grid-area: header;
 }
 
@@ -41,6 +45,7 @@ header nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
 
    
 }
@@ -59,9 +64,9 @@ a {
 }
 
 main {
-    background-image: linear-gradient(228deg, rgba(131,55,0,1) 15%, rgba(176,103,10,1) 42%, rgba(255,156,0,1) 100%);
-
-    /* background-image: radial-gradient(circle, rgba(131,55,0,1) 15%, rgba(176,103,10,1) 42%, rgba(255,156,0,1) 100%); */
+    
+    
+    background-color: #4cedca7d;
 
     grid-area: main;
     display: grid;
@@ -75,9 +80,18 @@ main {
 }
 
 #carrusel{
-    background-color: orange;
     grid-area: "carrusel";
     margin-top: 50px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#carrusel h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #2488ede3;
 }
 
 #carrusel img:hover{
@@ -93,14 +107,18 @@ main {
 
 
 #info{
-    background-color: pink;
+    background-color: #2488ede3;
     grid-area: "info";
-    
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 footer {
-    background-color: blue;
-    /* grid-area: 4/1/4/4; */
+    background-color: #92ed4ce0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     grid-area: footer;
 }
 
